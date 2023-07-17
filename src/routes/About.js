@@ -3,6 +3,7 @@ import Hero from "../components/Hero.js"
 
 import aboutImg from "../assets/aboutImg.jpg";
 import Footer from "../components/Footer";
+import AboutUS from "../components/AboutUs";
 function About(){
     return(
         <>
@@ -13,6 +14,7 @@ function About(){
                 title="About Us"
                 btnClass="hide"
             />
+            <AboutUS/>
             <Footer/>
         </>
     );

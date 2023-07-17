@@ -2,6 +2,7 @@ import "./NavigationBar.css";
 import React,{useState} from "react";
 import { MenuItems } from "./MenuItem";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function NavigationBar() {
@@ -9,6 +10,7 @@ function NavigationBar() {
     const handleClick =()=>{
         setClick(!click);
     }
+    const navigate =useNavigate();
     return (
         <nav className="NavbarItems">
             <h1 className="navbar-logo">LIAKTO</h1>
@@ -23,7 +25,7 @@ function NavigationBar() {
                         </li>
                     )
                 })}
-                <button>Sign Up</button>
+                <button onClick={()=>navigate("/signin")}>Sign Up</button>
             </ul>
         </nav>
     );
