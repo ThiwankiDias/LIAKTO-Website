@@ -1,0 +1,57 @@
+.login-container{
+    margin: 4rem 6rem;
+    color: #2a2a2a;
+}
+.login-container form{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.login-container form input{
+    height: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #2a2a2a;
+}
+.login-container form label{
+    text-align: left;
+}
+.login-container form button{
+    display: inline;
+}
+.login-container form .sign-up-in-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.login-container form .sign-up-in-buttons button{
+    flex-grow: 1;
+    margin: 5px;
+    background-color: rgb(231, 231, 231);
+}
+.login-container form .sign-up-in-buttons button:hover{
+    
+    background-color: black;
+}
+
+
+@media only screen and (max-width:850px) {
+
+    .login-container{
+        margin: 4rem 2rem;
+
+    }
+    .login-container form{
+        width: 100%;
+    }
+    .login-container form input{
+        height: 3rem;
+        padding: 0 1rem;
+
+    }
+        
+}
